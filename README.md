@@ -22,4 +22,6 @@ ____
 - dist - папка с установщиком программы *(electron-quick-start Setup 1.0.0)*
 - dist/win-unpacked - папка с программой в формате .exe *(electron-quick-start)*
 ____
+[.exe](https://drive.google.com/drive/folders/1-nR9JgycRjcfEogNeD2SakES29EIjN4m?usp=sharing)
+____
 ![screen_1](https://github.com/Maksim670051/Chess/raw/main/1.png)
