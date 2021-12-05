@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <title>Шахматы</title>
+  </head>
+  <body>
+    <!-- <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>. -->
+    <input id="numbers" type="text" placeholder="Введите числа k l m n через пробел">
+    <input id="figura" type="text" placeholder="Введите фигуру: ферзь, ладья, слон или конь">
+    <p class="button" id="run">Выполнить</p>
+    <p class="button" id="reset">Сбросить</p>
+    <div class="ch-wrap"></div>
+    <p id="rez"></p>
+    <div class="rez"></div>
+    <script src="./index.js"></script>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>

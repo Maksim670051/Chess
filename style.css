@@ -1,0 +1,94 @@
+/* Создание шахматной доски */
+.ch-wrap {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #111;
+}
+
+.ch-item {
+    width: 50px;
+    height: 50px;
+    float: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ch-black {
+    background: #111;
+}
+
+/* Создание кнопки */
+.button {
+
+    width: 100px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: green;
+    border-radius: 5px;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+    cursor: pointer;
+
+}
+
+/* Создание инпута */
+input {
+
+    width: 500px;
+    height: 40px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+    display: block;
+
+}
+
+.red{
+
+    height:20px;
+
+    border-radius: 10px;
+
+    background: red;
+
+    color: #ffffff;
+
+}
+
+.blue{
+
+    height:20px;
+
+    border-radius: 10px;
+
+    background: blue;
+
+    color: #ffffff;
+
+}
+
+.green{
+
+    height:20px;
+
+    border-radius: 10px;
+
+    background: green;
+
+    color: #ffffff;
+
+}
