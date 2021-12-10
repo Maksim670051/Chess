@@ -8,6 +8,12 @@ var b = document.getElementById('reset');
 b.onclick = function () {
     reset()
 }
+var log = []
+var c = document.getElementById('log');
+c.onclick = function () {
+    downloadFile()
+}
+
 
 // Построение шахматной доски
 var chessWrap = document.querySelector('.ch-wrap');
@@ -79,6 +85,7 @@ function run() {
         chessWrap.appendChild(item);
         item.classList.add('.rezz');
         document.querySelector(`.rez`).innerHTML = `<p>Совпадают ли цвета полей - ${af} </br>Угрожает ли фигура полю (m,n) - ${bf} </br> ${cf}</p>`;
+        log.push([`<p>Совпадают ли цвета полей - ${af} </br>Угрожает ли фигура полю (m,n) - ${bf} </br> ${cf}</p>`])
 
     }
 }
@@ -278,5 +285,29 @@ function cz(numberArray, figura, rezB, rezA) {
             return "Конь не сможет за 2 хода достать до заданной клетки"
         }
     }
+
+}
+
+//Запись в log-файл
+function downloadFile() {
+
+    // То, что будет записано в файл
+    let text = JSON.stringify({
+
+        1 : log
+
+    });
+    downloadAsFile(text);
+
+}
+function downloadAsFile(data) {
+
+    let a = document.createElement("a");
+    let file = new Blob([data], { type: 'application/json' });
+    a.href = URL.createObjectURL(file);
+
+    // название файла и расширение
+    a.download = 'log.txt';
+    a.click();
 
 }
